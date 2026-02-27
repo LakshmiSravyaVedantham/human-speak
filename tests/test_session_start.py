@@ -5,12 +5,13 @@ import subprocess
 import sys
 import tempfile
 from pathlib import Path
+from typing import Optional, Tuple
 
 HOOK_PATH = Path(__file__).parent.parent / "hooks" / "session-start.py"
 PLUGIN_ROOT = Path(__file__).parent.parent
 
 
-def _run_hook(profile_content: str | None = None) -> tuple[subprocess.CompletedProcess[str], str]:
+def _run_hook(profile_content: Optional[str] = None) -> Tuple[subprocess.CompletedProcess[str], str]:
     """Run the session-start hook with optional profile content."""
     with tempfile.TemporaryDirectory() as tmpdir:
         env_file = Path(tmpdir) / "claude.env"
