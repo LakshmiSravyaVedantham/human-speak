@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.mypy_cache/
+.pytest_cache/
+dist/
+*.egg-info/
+memory/user-speak-profile.md
+/tmp/human-speak-flag.json
+/tmp/human-speak-confirmed.json

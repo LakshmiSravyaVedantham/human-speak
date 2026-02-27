@@ -1,0 +1,13 @@
+{
+  "name": "human-speak",
+  "version": "0.1.0",
+  "description": "Detects ambiguous user input and confirms intent before Claude acts. Adapts to your communication style over time.",
+  "author": {
+    "name": "Sravya Vedantham",
+    "url": "https://github.com/sravyalu"
+  },
+  "repository": "https://github.com/sravyalu/human-speak",
+  "license": "MIT",
+  "keywords": ["hooks", "intent", "clarity", "conversation", "ux"],
+  "hooks": "./hooks/hooks.json"
+}
